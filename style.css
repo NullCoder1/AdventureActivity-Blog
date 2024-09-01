@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;  /* important line to understand */
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;   /* important line to understand */
+    z-index: -1;  /* important line to understand */
+
+}
+
+.background,
+.forehad {
+    position: absolute; /* important line to understand */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.background {
+    transform: translateZ(-40px) scale(5);  /* important line to understand */
+}
+
+.forehad {
+    transform: translateZ(-20px) scale(3);   /* important line to understand */
+}
+h1{
+    position: absolute;
+    
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6rem;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    /* background-color: skyblue; */
+}
+.pp{
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.first
+{
+
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+.text
+{
+    font-size:1.5rem;
+    padding: 0 10 rem;
+    margin: 5rem 0;
+}
+.bg
+{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed ; /* important line to understand */
+    background-position: center; /* important line to understand */
+    background-size: cover; 
+    height: 500px;
+}
+.desc
+{
+    position: absolute;
+    background-color: aliceblue;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 10 rem;
+    font-weight: 600px;
+}
+/* different method to set images in the web pages without using the img tag */
+.bg1
+{
+    background-image: url(sport-1.jpg);  
+}
+
+.bg2
+{
+    background-image: url(sport-2.jpg);
+}
+
+.bg3
+{
+    background-image: url(sport-3.jpg);
+}
+
